@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "419821ccb8a8fbfee46ce81fba4389ba",
+    "content-hash": "91fa323639dd0c31a816393ac41218eb",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1250,6 +1250,58 @@
             "time": "2018-06-10T17:57:20+00:00"
         },
         {
+            "name": "rakuten-ws/rws-php-sdk",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rakuten-ws/rws-php-sdk.git",
+                "reference": "54b0dc8cdc5a92335bc75d72c480e6b7bb127ca9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rakuten-ws/rws-php-sdk/zipball/54b0dc8cdc5a92335bc75d72c480e6b7bb127ca9",
+                "reference": "54b0dc8cdc5a92335bc75d72c480e6b7bb127ca9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-openssl": "*",
+                "php": ">=5.2.3"
+            },
+            "suggest": {
+                "ext-curl": "*",
+                "pear-pear/HTTP_Client": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "RakutenRws_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Shogo Kawahara",
+                    "email": "shogo.a.kawahara@mail.rakuten.com"
+                }
+            ],
+            "description": "The SDK of Rakuten Web Service",
+            "homepage": "http://webservice.rakuten.co.jp",
+            "keywords": [
+                "client",
+                "sdk",
+                "webapi"
+            ],
+            "time": "2015-06-08T05:45:03+00:00"
+        },
+        {
             "name": "ramsey/uuid",
             "version": "3.7.3",
             "source": {
@@ -1331,16 +1383,16 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v6.0.2",
+            "version": "v6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "412333372fb6c8ffb65496a2bbd7321af75733fc"
+                "reference": "0ff595e1d9d7d1c929b2a5f7b774bbcfbbd81587"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/412333372fb6c8ffb65496a2bbd7321af75733fc",
-                "reference": "412333372fb6c8ffb65496a2bbd7321af75733fc",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/0ff595e1d9d7d1c929b2a5f7b774bbcfbbd81587",
+                "reference": "0ff595e1d9d7d1c929b2a5f7b774bbcfbbd81587",
                 "shasum": ""
             },
             "require": {
@@ -1351,10 +1403,14 @@
                 "mockery/mockery": "~0.9.1",
                 "symfony/phpunit-bridge": "~3.3@dev"
             },
+            "suggest": {
+                "ext-intl": "Needed to support internationalized email addresses",
+                "true/punycode": "Needed to support internationalized email addresses, if ext-intl is not installed"
+            },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.0-dev"
+                    "dev-master": "6.1-dev"
                 }
             },
             "autoload": {
@@ -1376,13 +1432,13 @@
                 }
             ],
             "description": "Swiftmailer, free feature-rich PHP mailer",
-            "homepage": "http://swiftmailer.symfony.com",
+            "homepage": "https://swiftmailer.symfony.com",
             "keywords": [
                 "email",
                 "mail",
                 "mailer"
             ],
-            "time": "2017-09-30T22:39:41+00:00"
+            "time": "2018-07-02T20:24:38+00:00"
         },
         {
             "name": "symfony/console",
