@@ -52,6 +52,16 @@ class ItemsController extends Controller
             'items' => $items,
         ]);
     }
+     public function show($id)
+    {
+      $item = Item::find($id);
+      $want_users = $item->want_users;
+
+      return view('items.show', [
+          'item' => $item,
+          'want_users' => $want_users,
+      ]);
+    }
 
     /**
      * Store a newly created resource in storage.
@@ -70,11 +80,7 @@ class ItemsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        //
-    }
-
+    
     /**
      * Show the form for editing the specified resource.
      *
