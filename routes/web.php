@@ -28,4 +28,6 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('users', 'UsersController', ['only' => ['show']]);
     Route::post('have', 'ItemUserController@have')->name('item_user.have');
     Route::delete('have', 'ItemUserController@dont_have')->name('item_user.dont_have');
+//ランキング関連
+    Route::get('ranking/want', 'RankingController@want')->name('ranking.want');
 });
