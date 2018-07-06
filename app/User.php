@@ -98,14 +98,14 @@ class User extends Authenticatable
     public function dont_have($itemId)
     {
         // 既に have しているかの確認
-        $exist = $this->is_wanting($itemId);
+        $exist = $this->is_having($itemId);
 
         if ($exist) {
             // 既に have していれば have を外す
             \DB::delete("DELETE FROM item_user WHERE user_id = ? AND item_id = ? AND type = 'have'", [\Auth::id(), $itemId]);
             return true;
         } else {
-            // 未 Want であれば何もしない
+            // 未 haveであれば何もしない
             return false;
         }
     }
